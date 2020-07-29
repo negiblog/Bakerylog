@@ -1,0 +1,217 @@
+<html>
+<head>
+<title>
+
+Negi cafe
+</title>
+<link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300&display=swap" rel="stylesheet">
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+*{margin: 0px; 
+padding:0px; 
+box-sizing:border-box;
+}
+
+body{
+font-size:20px;
+overflow-x:hidden;	
+color:white;
+font-family: 'Flamenco', cursive;
+
+}
+.clearfix:after{
+	content:".";
+visibility: hidden;
+display:block;
+height: 0px;
+clear:both;
+	
+}
+header{
+background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/b1.jpg);
+
+height:100vh;
+background-size:cover;
+background-repeat;
+background-position:center;
+}
+.row{
+max-width: 1180px;
+margin:auto;	
+	
+}
+.logo{
+	height:12vh;
+	width:auto;
+	float:left;
+	margin-top:20px;
+}
+.main-nav{
+float:right;
+margin-top:60px;	
+}
+.main-nav li{
+display: inline-block;
+list-style:none;
+margin-left:40px;	
+	
+}
+.main-nav li a{
+	padding: 5px 0;
+color: #fff;
+text-decoration:none;
+text-transform:uppercase;
+font-size:90%;	
+font-weight:100;
+	
+}
+
+.main-nav li a:hover{
+	
+border-bottom:2px solid #bf55ec;	
+	
+	
+}
+
+
+.main-content-header{
+	width: 1180px;
+	position:absolute;
+	
+	top: 55%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	
+	
+}
+h1{
+color:#ff;
+font-size: 240%; /*20*240/100=42px	*/
+word-spacing: 5px;
+letter-spacing: 3px;
+margin-bottom:20px;
+text-transform: uppercase;
+font-weight:lighter;
+
+}
+.btn{ display:inline-block;
+padding: 10px 30px;
+font-weight:lighter;
+text-decoration:none;
+text-transform:uppercase;
+border-radius: 200px;
+ transition: background-color 0.2s, border 0.2s. color 0.2;
+
+
+
+}
+.btn-full{
+	background-color: transparent;
+	color: #bf55ec;
+	margin-right: 15px;
+border: 1px solid #bf55ec;
+
+
+}
+
+.btn-full:hover{
+
+background-color:#fff;
+
+}
+.btn-nav{
+background-color: transparent;
+color:#fff;
+border: 1px solid #fff;
+
+	
+	
+}
+.btn-nav:hover{
+background-color: #bf55ec;
+
+}
+.color-change{
+	animation: colorchangenegi 1s infinite;
+}
+
+@keyframes colorchangenegi{
+0%{color:red}
+25{color:#bf55ec}
+50{color:white}
+100%{color:#bf55ec}	
+}
+.mobile-icon{
+display:none;	
+}
+@media only screen and (max-width: 1180px){
+	.main-content-header{
+	width:100%;
+	padding:0 2%;	
+	}}
+	@media only screen and (max-width: 998px){
+		h1{font-size: 200%;}
+	}
+	@media only screen and (max-width: 768px){
+		h1{font-size: 180%;}
+		.main-nav{display:none;}
+		.mobile-icon{
+			display:inline-block;
+			color:#fff;
+			float:right;
+			margin-top:30px;
+			margin-right: 20px;
+			}
+			.main-nav li{
+			float:left;
+			display: block;
+			margin-top: 10px;	
+			}
+	}
+	
+	
+
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div class="row clearfix animated slideInDown">
+<img src="image/1.png" class="logo" >
+
+<ul class="main-nav animated slideInDown">
+<li><a href="#">CAKE DELIVERY</a></li>
+<li><a href="#">HOW TO ORDER</a></li>
+
+<li><a href="#">CHECK MORE</a></li>
+<li><a href="#">Sign up</a></li>
+</ul>
+<a href="#" class="mobile-icon" onClick="slideshow()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+</div>
+</nav>
+<div class="main-content-header">
+<h1>WELECOME TO <span class="color-change">NEGI CAFE</span>.<br>
+HOUSE OF CAKE LOVER OO YES.</h1>
+<a href="#" class="btn btn-full">Click to order</a>
+<a href="#" class="btn btn-nav">Show me more</a>
+</header>
+<script type="text/javascript">
+function slideshow()
+{
+	var x =document.getElementById('check-classs');
+	if(x.style.display === "none"){
+	x.style.display="block"
+	}else{
+	x.style.display="none";	
+	}
+	
+	
+}
+</script>
+
+</body>
+</html>
